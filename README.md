@@ -1,9 +1,9 @@
-## Summary
+### Summary
 We are building a Electrical Discharge Machining (EDM) CNC.
 
 We have assembled most of the parts needed and will attempt assemby on the. 21-22 of February 2024.
 
-## PSU - Powercore V1
+### PSU - Powercore V1
 We have the “Powercore V1” that was sold on kickstarter. It will generate the sparks and the kit comes with electrodes and some sample aluminium plates. I have purchased some titanium plates to test with also. Still needs some 3d-prints.
 
 [Youtube video about the Powercore](https://youtu.be/D6MygL8R9kM?si=-dXRyd_AGkKtzGDO)
@@ -12,12 +12,40 @@ We have the “Powercore V1” that was sold on kickstarter. It will generate th
 
 The hardware and schematics repos are under the same organization.
 
-## Motion platform - 3D printer
+### Motion platform - 3D printer
 As our motion platform we are first intending to try recycling an old Ultimaker 1 3D printer. Its print bed is stationary in the XY plane but moves vertically. 
 
 [Reprap wiki for Ultimaker 1](https://reprap.org/wiki/Ultimaker)
 
-## Open questions and todos:
+### CAM
+
+The powercore team has made a CAM program called **EDMweb** that can be downloaded [here](https://github.com/Rack-Robotics/EDMWeb-Binaries). It is a fork of LASERweb.
+
+The Ultimaker1 does not support moving bellow Z0 *(no negative coordinates allowed)*. We have a workaround by post processing the g-code with a python script and the Python Script plugin for Notepad++. The solution was found [here](https://www.cnczone.com/forums/g-code-programing/411754-cnc-cam-software.html).
+
+Here is the script:
+
+    dx = 0.0
+    dy = 0.0
+    dz = 50.0
+    
+    def AddNumberToX(match):
+     return 'X%s' % (str(float(match.group(1))+dx))
+
+    def AddNumberToY(match):
+     return 'Y%s' % (str(float(match.group(1))+dy))
+
+    def AddNumberToZ(match):
+     return 'Z%s' % (str(float(match.group(1))+dz))
+    
+    editor.rereplace('X([+-]?[0-9.]+)', AddNumberToX)
+    editor.rereplace('Y([+-]?[0-9.]+)', AddNumberToY)
+    editor.rereplace('Z([+-]?[0-9.]+)', AddNumberToZ)
+
+
+
+
+### Open questions and todos:
 * Get de-ionized water
 * Figure out what to use for a “bath”, can we print ABS and seal with acetone?
 * CAD a tool mount for the ulitmaker XY-platform
