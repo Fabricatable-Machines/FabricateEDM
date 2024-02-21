@@ -23,7 +23,7 @@ The powercore team has made a CAM program called **EDMweb** that can be download
 
 The Ultimaker1 does not support moving bellow Z0 *(no negative coordinates allowed)*. We have a workaround by post processing the g-code with a python script and the Python Script plugin for Notepad++. The solution was found [here](https://www.cnczone.com/forums/g-code-programing/411754-cnc-cam-software.html).
 
-Here is the script:
+Here is the script, it also in this repo:
 
     dx = 0.0
     dy = 0.0
@@ -42,8 +42,32 @@ Here is the script:
     editor.rereplace('Y([+-]?[0-9.]+)', AddNumberToY)
     editor.rereplace('Z([+-]?[0-9.]+)', AddNumberToZ)
 
+And here is the tutorial for changing g-code coordinates with Notepad++ by lucaswalker:
 
+    1) Install Python Script plugin from the Plugin Manager or from the official website.
+    
+    2) Then go to Plugins > Python Script > New Script. Choose a filename for your new file (eg add_numbers.py) and copy the code that follows:
+    
+    dx = 100.0
+    dy = 100.0
+    dz = 100.0
+    
+    def AddNumberToX(match):
+     return 'X%s' % (str(float(match.group(1))+dx))
+    
+    def AddNumberToY(match):
+     return 'Y%s' % (str(float(match.group(1))+dy))
 
+    def AddNumberToZ(match):
+     return 'Z%s' % (str(float(match.group(1))+dz))
+    
+    editor.rereplace('X([+-]?[0-9.]+)', AddNumberToX)
+    editor.rereplace('Y([+-]?[0-9.]+)', AddNumberToY)
+    editor.rereplace('Z([+-]?[0-9.]+)', AddNumberToZ)
+    
+    3) Run Plugins > Python Script > Scripts > add_numbers.py
+
+The script needs to be in the scripts folder of Python Script: *C:\Program Files\Notepad++\plugins\PythonScript\scripts*. And you need to restart Notepad++ for the script to be available from the menu.
 
 ### Open questions and todos:
 * Get de-ionized water
