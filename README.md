@@ -83,8 +83,10 @@ The script needs to be in the scripts folder of Python Script: *C:\Program Files
 
 ### Feedrates
 
- - Titanium 0.5mm thick - 1.5mm brass electrode: Feedrate: 0.15mm/m, plungerate: 0.04mm/m, wear ratio: 0.5 *(Drilling and cutting worked, but shorted randomly some times. Settings might be at the edge of capacity.*
- - Stainless steel 1mm thick - 1.5mm brass electrode: Feedrate: 0.3mm/m, plungerate: ?, wear ratio: 2
+**NB It seems we have been fooled by the the Ultimaker1 firmware. There is probably a minimum feedrate of about 4mm/m that the firmware has rounded our feedrates up to**
+
+ - Titanium 0.5mm thick - 1.5mm brass electrode: Feedrate: 0.15mm/m, plungerate: 0.04mm/m, wear ratio: 0.5 *(Drilling and cutting worked, but shorted randomly some times. Settings might be at the edge of capacity.* **Don't use these settings, only for reference**
+ - Stainless steel 1mm thick - 1.5mm brass electrode: Feedrate: 0.3mm/m, plungerate: ?, wear ratio: 2 **Don't use these settings, only for reference**
 
 ### Open questions and todos:
 * Get de-ionized water
