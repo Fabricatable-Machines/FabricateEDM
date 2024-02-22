@@ -1,7 +1,10 @@
 ### Summary
 We are building a Electrical Discharge Machining (EDM) CNC.
 
-We have assembled most of the parts needed and will attempt assemby on the. 21-22 of February 2024.
+ 
+ #### Hackaton 21-22 of February 2024.
+
+Cut 0.5 mm Aluminium parts
 
 ![image](https://github.com/Fabricatable-Machines/FabricateEDM/assets/3476653/b793300d-9cf0-4a9d-a21c-f98e820e3691)
 
@@ -9,7 +12,10 @@ We have assembled most of the parts needed and will attempt assemby on the. 21-2
 
 [![image](https://github.com/Fabricatable-Machines/FabricateEDM/assets/3476653/b63d0721-819b-4e95-97eb-6c598b2c9c6e)](https://photos.app.goo.gl/N2ZNjn7RKqB6QSyi7)
 
+Also experimented with 5mm steel (no luck), 1mm stainless steel (success with extreme electrode wear) and titanium.
+
 ### PSU - Powercore V1
+
 We have the “Powercore V1” that was sold on kickstarter. It will generate the sparks and the kit comes with electrodes and some sample aluminium plates. I have purchased some titanium plates to test with also. Still needs some 3d-prints.
 
 [Youtube video about the Powercore](https://youtu.be/D6MygL8R9kM?si=-dXRyd_AGkKtzGDO)
