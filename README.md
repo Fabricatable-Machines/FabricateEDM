@@ -3,6 +3,9 @@ We are building a Electrical Discharge Machining (EDM) CNC.
 
 We have assembled most of the parts needed and will attempt assemby on the. 21-22 of February 2024.
 
+![image](https://github.com/Fabricatable-Machines/FabricateEDM/assets/3476653/b793300d-9cf0-4a9d-a21c-f98e820e3691)
+
+
 ### PSU - Powercore V1
 We have the “Powercore V1” that was sold on kickstarter. It will generate the sparks and the kit comes with electrodes and some sample aluminium plates. I have purchased some titanium plates to test with also. Still needs some 3d-prints.
 
