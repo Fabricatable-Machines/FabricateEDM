@@ -69,6 +69,10 @@ And here is the tutorial for changing g-code coordinates with Notepad++ by lucas
 
 The script needs to be in the scripts folder of Python Script: *C:\Program Files\Notepad++\plugins\PythonScript\scripts*. And you need to restart Notepad++ for the script to be available from the menu.
 
+### Feedrates
+
+ - Stainless steel 1mm thick - 1.5mm brass electrode: Feedrate: 0.3mm/m, plungerate: ?, wear ratio: 2
+
 ### Open questions and todos:
 * Get de-ionized water
 * Figure out what to use for a “bath”, can we print ABS and seal with acetone?
