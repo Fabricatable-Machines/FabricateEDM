@@ -5,6 +5,9 @@ We have assembled most of the parts needed and will attempt assemby on the. 21-2
 
 ![image](https://github.com/Fabricatable-Machines/FabricateEDM/assets/3476653/b793300d-9cf0-4a9d-a21c-f98e820e3691)
 
+![image](https://github.com/Fabricatable-Machines/FabricateEDM/assets/3476653/d9c0335d-7e6c-42ab-912d-1bd8c9638546)
+
+[![image](https://github.com/Fabricatable-Machines/FabricateEDM/assets/3476653/b63d0721-819b-4e95-97eb-6c598b2c9c6e)](https://photos.app.goo.gl/N2ZNjn7RKqB6QSyi7)
 
 ### PSU - Powercore V1
 We have the “Powercore V1” that was sold on kickstarter. It will generate the sparks and the kit comes with electrodes and some sample aluminium plates. I have purchased some titanium plates to test with also. Still needs some 3d-prints.
