@@ -14,6 +14,10 @@ Cut 0.5 mm Aluminium parts
 
 Also experimented with 5mm steel (no luck), 1mm stainless steel (success with extreme electrode wear) and titanium.
 
+We belive lower feedrates will yeild better results during:
+
+[EDM Hackaton #2](https://meetu.ps/e/MYcvP/d1LWY/i) in Oslo 20 March at [Bitraf Makerspace](https://bitraf.no/)
+
 ### PSU - Powercore V1
 
 We have the “Powercore V1” that was sold on kickstarter. It will generate the sparks and the kit comes with electrodes and some sample aluminium plates. I have purchased some titanium plates to test with also. Still needs some 3d-prints.
@@ -89,11 +93,8 @@ The script needs to be in the scripts folder of Python Script: *C:\Program Files
  - Stainless steel 1mm thick - 1.5mm brass electrode: Feedrate: 0.3mm/m, plungerate: ?, wear ratio: 2 **Don't use these settings, only for reference**
 
 ### Open questions and todos:
-* Get de-ionized water
-* Figure out what to use for a “bath”, can we print ABS and seal with acetone?
-* CAD a tool mount for the ulitmaker XY-platform
-* Print tool and part holder
-* Do we need a custom postprocessor for the gcode?
-* Can we live tune the feed speed using the spark feedback from the powercore, (using a separate microcontroller?  Do we need another firmware?)
-* Get a US 110V transformer [300w from kjell.com](https://www.kjell.com/no/produkter/elektro-og-verktoy/stromadaptrer/acac-stromadapter/230-110-v-omformer-p44098) should be enough for typical feed rate //[source dev on discord](https://discord.com/channels/813870433165508688/1136460259809034363/1205999920125841528)
-* 24V PSU for enable and to supply motherboard ([quickstart guide says to not use printer as 24V source](https://youtu.be/FpUhpkBXa6Q?si=DlgyjV4E4XxyUong)
+* Get more de-ionized water [Biltema](https://www.biltema.no/bil---mc/bilbatterier/batteritilbehor/destillert-vann-4-liter-2000054547)
+* Test re-use of water using a funnel and some filters (what grade?)
+* Can we live tune the feed speed using the spark feedback from the powercore, (using a separate microcontroller?  
+* Make/find a place for the machine at bitraf, label it properly.
+* Write bitraf wiki-guide on how to use, programs needed and settings
