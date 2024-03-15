@@ -1,6 +1,9 @@
 ### Summary
 We are building a Electrical Discharge Machining (EDM) CNC.
 
+[EDM on wikipedia: ](https://en.wikipedia.org/wiki/Electrical_discharge_machining)
+*Electrical discharge machining (EDM), also known as spark machining, spark eroding, die sinking, wire burning or wire erosion, is a metal fabrication process whereby a desired shape is obtained by using electrical discharges (sparks).*
+
  
  #### Hackaton 21-22 of February 2024.
 
